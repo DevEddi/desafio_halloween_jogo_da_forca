@@ -11,10 +11,7 @@ h1{
     margin: 20px 0 40px;
     color: rgb(201, 59, 16);
 }
-h3, ul{
-    padding: 20px;
-    color: rgb(201, 59, 16);
-}
+
 canvas{
     color: aliceblue;
     margin-left: 25%;
