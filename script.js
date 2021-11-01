@@ -1,7 +1,7 @@
-const palavras = ["BANANA", "CAJU", "MORANGO", "KIWI", "TAMARINDO"];
+const palavras = ["MORCEGO", "VASSOURA", "DOCE", "ABOBORA", "CAVEIRA", "DRACULA", "MONSTRO", "MUMIA", "ARANHA", "MEDO", "TERROR"];
 var quantidadeErros = 0;
 var acertos = 0;
-palavraSecreta = palavras[Math.floor(Math.random()*5)];
+palavraSecreta = palavras[Math.floor(Math.random()*11)];
 var tentativas = "";
 /* Tentativas não estava vazio, e recebendo uma palavra aletória
     além de estar printando, no adiciona tentativa, a palavraSecreta, 
@@ -21,6 +21,7 @@ function teclaPressionada(){
         for(var i = 0; i < palavraSecreta.length; i++){
             if(palavraSecreta[i] == (event.key).toUpperCase()){
                 ctx.font="35px Arial";
+                ctx.fillStyle = 'orange';
                 ctx.fillText((event.key).toUpperCase(), 20 + (35 * i), 200);
                 acertos++;
             }
@@ -37,6 +38,7 @@ function adicionaTentativa(){
     if(!tentativas.includes(event.key)){
         tentativas = tentativas + event.key; /* Tentativas não estava vazia acabou recebendo a palavra secreta e os erros junto */
         ctx.font = "20px Arial";
+        ctx.fillStyle = 'orange';
         ctx.fillText("Tentativas: " + tentativas.toUpperCase(), 20, 280);
     }
 }
@@ -44,12 +46,13 @@ function adicionaTentativa(){
 function verificaFimJogo(){
     if(quantidadeErros >= 6){
         ctx.font = "20px Arial";
-        ctx.fillText("Gamer Over! A palavra era:" + palavraSecreta, 200, 100);
+        ctx.fillText("Gamer Over! A palavra era: " + palavraSecreta, 200, 100);
         window.onkeypress = null;
         return;
     }
     if(acertos == palavraSecreta.length){
         ctx.font = "20 px Arial";
+        ctx.fillStyle = 'orange';
         ctx.fillText("Você ganhou!", 200, 100);
         window.onkeypress = null;
         return;
