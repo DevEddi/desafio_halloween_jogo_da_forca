@@ -4,6 +4,8 @@
 
 👨‍🏫 Teacher: [Humberto Dalpra](https://www.linkedin.com/in/humberto-dalpra-837b511aa/)
 
+🎃 Page: [Jogo da Forca](https://3dd1.github.io/desafio-Halloween-jogo-da-forca/)
+
 <h2>Desafio:</h2>
 <p>Achar o erro dentro código, para poder funcionar a forca</p>
 
