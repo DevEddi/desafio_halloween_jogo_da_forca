@@ -7,7 +7,13 @@
 🎃 Page: [Jogo da Forca](https://3dd1.github.io/desafio-Halloween-jogo-da-forca/)
 
 <h2>Desafio:</h2>
-<p>Achar o erro dentro código, para poder funcionar a forca</p>
+
+    * Mediante a realização de tentativas relacionadas a acertar a palavra indicada pelo sistema, é absorvida a letra informada pelo usuário e agregada a mesma à efetivação do jogo, atribuindo-a às tentativas 👇🏻
+    * Caso a letra indicada pelo usuário esteja contida na palavra indicada é realizada essa exibição 👆🏻
+    * Caso a letra indicada pelo usuário não esteja contida na palavra indicada é realizada essa exibição 👇🏻 (iniciando a construção das 6 partes do boneco (cabeça, tronco, baço esquerdo, braço direito, perna esquerda e perna direita))
+    * Caso o usuário acerte a palavra sem totalizar 6 erros é exibido 👇🏻
+    * Caso o usuário cometa um total de 6 erros, ao tentar adivinhar a palavra, é exibido 👇🏻
+    * Caso a mesma letra seja repetida pelo usuário, considera-se como erro, pois todas as tentativas de letras serão exibidas ao usuário 👆🏻.
 
 <h2>🧰 Tools</h2>
 
